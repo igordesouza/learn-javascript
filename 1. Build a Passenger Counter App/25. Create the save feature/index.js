@@ -7,10 +7,15 @@ function increment() {
     countEl.innerText = count
 }
 
+let saveEl = document.getElementById("save-el")
+
+
 function save() {
     // 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
     // 3. Render the variable in the saveEl using innerText
     // NB: Make sure to not delete the existing content of the paragraph
+    msg = " " + count + " - "
+    saveEl.innerText += msg
     console.log(count)
 }
 
