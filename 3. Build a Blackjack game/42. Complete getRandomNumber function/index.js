@@ -11,9 +11,21 @@ let cardsEl = document.getElementById("cards-el")
 
 
 function getRandomCard() {
+    number = Math.floor( Math.random()*13 ) + 1
+    if (number === 1){
+        console.log(number)
+        return 11
+    }
+    else if (number > 10){
+        console.log(number)
+        return 10}
+    else {
+        console.log(number)
+        return number
+    }
+    
     // if 1     -> return 11
     // if 11-13 -> return 10
-    return Math.floor( Math.random()*13 ) + 1
 }
 
 function startGame() {
