@@ -6,3 +6,28 @@ let orangeShelf = document.getElementById("orange-shelf")
 // and the oranges onto the orangeShelf. Use a for loop,
 // a conditional statement, and the textContent property.
 
+// function sortFruit() {
+//     if (fruit[i] === "🍎") {
+//         appleShelf.textContent += "🍎"
+//     } else {
+//         orangeShelf.textContent += "🍊"
+//     }
+// }
+
+// for (let i=0; i<fruit.length; i++) {
+//     sortFruit()
+// }
+
+
+function sortFruit() {
+    for (let i=0; i<fruit.length; i++) {
+
+        if (fruit[i] === "🍎") {
+            appleShelf.textContent += "🍎"
+        } else {
+            orangeShelf.textContent += "🍊"
+        }
+    }
+}
+
+sortFruit()
