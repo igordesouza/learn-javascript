@@ -11,8 +11,16 @@ if (leadsFromLocalStorage) {
     render(myLeads)
 }
 
-// 2. Listen for clicks on tabBtn. Log Per's LinkedIn URL to the console
+const tabs = [
+    {url: "https://www.google.com"}
+]
 
+const tabBtn = document.getElementById("tab-btn")
+
+// 2. Listen for clicks on tabBtn. Log Per's LinkedIn URL to the console
+tabBtn.addEventListener("dblclick", function() {
+    console.log(tabs[0].url)
+})
 
 function render(leads) {
     let listItems = ""
