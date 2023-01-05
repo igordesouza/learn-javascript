@@ -9,5 +9,17 @@
 
 // Use both a for loop and a template string to solve the challenge
 function generateSentence(desc, arr) {
-    
+    let msg = ``
+    let names = ``
+
+    msg = `The ${arr.length} ${desc} are `
+
+    for (i = 0; i < arr.length; i++) {
+        if (i === arr.length - 1) { names += `${arr[i]}.` }
+        else { names += `${arr[i]}, ` }
+
+    }
+    console.log(msg + names)
 }
+
+generateSentence("GOATS", ["Jordan", "James"])
